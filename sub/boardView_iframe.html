@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="keywords" content="IOU" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>IOU</title>
+<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/sub.js"></script>
+</head>
+<body class="iframe">
+<!-- 게시판 보기 영역 -->
+<div class="board">
+    <!-- table-->
+    <table class="input view" cellpadding="0" cellspacing="0" summary="게시판읽기">
+    <caption>게시판읽기</caption>
+        <colgroup>
+            <col width="15%" />
+            <col width="18%" />
+            <col width="12%" />
+            <col width="21%" />
+            <col width="12%" />
+            <col width="22%" />
+        </colgroup>
+        <tr>
+            <th class="L">Title</th>
+            <td colspan="5">Enter the post title.</td>
+        </tr>
+        <tr>
+            <th class="L">Publishers</th>
+            <td>Hong Gil Dong</td>
+            <th class="L">Tracking number</th>
+            <td>1994</td>
+            <th class="L">Publication  date</th>
+            <td>2013.11.25</td>
+        </tr>
+        <tr>
+            <th class="L">Contents</th>
+            <td colspan="5">
+                <div class="viewArea">
+                    <p>Enter the details.</p>
+                    <br />
+                    <p>Enter the details.</p>
+                    <br />
+                    <p>Enter the details.</p>
+                    <p>Enter the details.</p>
+                    <p>Enter the details.</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th class="L">Attachments</th>
+            <td colspan="5" class="last"><span class="addfile">Hot_resource.xlsx</span> <span class="addfile">Hot_resource.xlsx</span> <span class="addfile">Hot_resource.xlsx</span></td>
+        </tr>
+    </table>
+    <!-- table//--> 
+    <!-- btnArea-->
+  <div class="btnArea">
+        <div class="iframeLeftArea"><a href="boardList_iframe.html" class="btn_darkblue"><span>List</span></a> <a href="boardWrite_iframe.html" class="btn_darkblue"><span>Modify</span></a> </div>
+        <div class="iframeRightArea"><a href="#" class="btn_darkblue"><span>Delete</span></a> <a href="boardList_iframe.html" class="btn_darkblue"><span>Register</span></a></div>
+    </div>
+    <!-- btnArea//-->
+    <!-- table-->
+    <table class="input view" cellpadding="0" cellspacing="0" summary="게시판이동">
+    <caption>게시판이동</caption>
+        <colgroup>
+            <col width="15%" />
+            <col width="85%" />
+        </colgroup>
+        <tr>
+            <th class="L"><span class="viewlist">Previous</span> <img src="../images/icon_preview.gif" alt="이전글" /></th>
+            <td>Enter the post title.</td>
+        </tr>
+        <tr>
+            <th class="L"><span  class="viewlist">Next Article</span> <img src="../images/icon_nextview.gif" alt="다음글" /></th>
+            <td class="last">Enter the post title.</td>
+        </tr>
+    </table>
+    <!-- table//--> 
+</div>
+<!-- 게시판 보기 영역 //-->
+</body>
+</html>

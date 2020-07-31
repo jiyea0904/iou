@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="keywords" content="IOU" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>IOU</title>
+<link rel="stylesheet" type="text/css" href="../css/popup.css" />
+<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+</head>
+<body id="popup">
+<!-- size width:626px; height:545px; -->
+<div class="popup">
+    <h4>IP-Firm search</h4>
+    <div class="contentArea">
+    	<!-- search -->
+        <div class="search">
+            <table class="input column_2" cellpadding="0" cellspacing="0" summary="Member information input" >  
+            <caption>Member information input</caption>
+                <colgroup>
+                    <col width="115px" />
+                    <col width="*" />
+                    <col width="115px" />
+                    <col width="*" />
+                </colgroup>
+                <tbody>   
+                    <tr>
+                        <th>Country</th>
+                        <td class="first"><label for="country"></label><input type="text" class="txt_180" id="country" value="Korea" /> </td>
+                        <th>Country</th>
+                        <td><label for="IP-Firm"></label><input type="text" class="txt_180" id="IP-Firm" value="" /> </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- btnArea -->
+            <div class="btnArea">
+            	<div class="rightArea">
+                    <a class="btn_darkblue" href="#"><span>Lookup</span></a>
+                </div>
+            </div>
+            <!-- btnArea //-->
+            <div class="table_thead">
+                <table cellpadding="0" cellspacing="0" summary="list_request" >  
+                <caption>Real-time, list of request</caption>
+                    <colgroup>
+                        <col width="5%" />
+                        <col width="45%" />
+                        <col width="*" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="C"></th>
+                            <th class="C">IP-Firm</th>
+                            <th class="C">Address</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <!-- result_scroll -->
+            <div class="result_scroll scroll">
+                <table cellpadding="0" cellspacing="0" summary="list_request" >  
+                <caption>Real-time, list of request</caption>
+                    <colgroup>
+                        <col width="5%" />
+                        <col width="45%" />
+                        <col width="*" />
+                    </colgroup>
+                    <tbody>   
+                        <tr>
+                            <td class="C"><label for="count_01"></label><input type="radio" name="meber_type" id="count_01" /></td>
+                            <td class="L">Astran International IP Group</td>
+                            <td class="L">United Arab Emirates</td>
+                        </tr>
+                        <tr>
+                            <td class="C"><label for="count_02"></label><input type="radio" name="meber_type" id="count_02" /></td>
+                            <td class="L">B&amp;IP-JOOWON Patent and Law Firm</td>
+                            <td class="L">Antigua and Barbuda</td>
+                        </tr>
+                        <tr>
+                            <td class="C"><label for="count_03"></label><input type="radio" name="meber_type" id="count_03" /></td>
+                            <td class="L">CHANG&amp;HAN Intellectual Property</td>
+                            <td class="L">Ascension Island</td>
+                        </tr>
+                        <tr>
+                            <td class="C"><label for="count_04"></label><input type="radio" name="meber_type" id="count_04" /></td>
+                            <td class="L">CHEON JEE International Patent and Law Firm</td>
+                            <td class="L">Armenia</td>
+                        </tr>
+                        <tr>
+                            <td class="C"><label for="count_05"></label><input type="radio" name="meber_type" id="count_05" /></td>
+                            <td class="L">CHOONGMU Patent and Law Firm</td>
+                            <td class="L">Angola</td>
+                        </tr>
+                        <tr>
+                            <td class="C"><label for="count_06"></label><input type="radio" name="meber_type" id="count_06" /></td>
+                            <td class="L">Astran International IP Group</td>
+                            <td class="L">Austria</td>
+                        </tr>
+                        <tr>
+                            <td class="C"><label for="count_07"></label><input type="radio" name="meber_type" id="count_07" /></td>
+                            <td class="L">B&amp;IP-JOOWON Patent and Law Firm</td>
+                            <td class="L">Australia</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- result_scroll //-->
+        </div>
+        <!-- search //-->
+        <!-- btnArea -->
+        <div class="btnArea last">
+            <a class="btn_blue" href="#"><span>Confirm</span></a>
+        </div>
+        <!-- btnArea //-->
+    </div>
+    <a href="#" class="btn_close"><img src="../images/btn_close.png" alt="close" /></a>
+</div>
+<!-- contents //-->
+</body>
+</html>

@@ -1,0 +1,139 @@
+@charset "utf-8"; 
+/* CSS Document */
+@import url("common.css");
+
+/* portlet_bg */
+.opacity_13{background:url(../images/bg_0.13.png) left top;}
+.opacity_8{background:url(../images/bg_0.08.png) left top;}
+.opacity_10{background:url(../images/bg_0.10.png) left top;}
+
+/* portlet_size */
+.port_box{position:relative; float:left; width:416px; height:261px; margin:5px;}
+.port_box_12{position:relative; float:left; width:416px; height:472px; margin:5px;}
+.port_box_22{position:relative; float:left; width:842px; height:472px; margin:5px;}
+
+
+/* portlet_title */
+.title{position:relative; height:85px; background:url(../images/title_border.png) repeat-x left bottom;}
+.title .count{position:absolute; top:14px; right:6px;}
+.title .count span{float:left; width:38px; height:41px; line-height:38px; background:url(../images/count_0.gif) no-repeat left top; font-size:25px; color:#fff; text-align:center; margin-left:-5px; padding:0; }
+.title .count span.first{margin:0;}
+.title .contries{position:absolute; bottom:13px; right:10px; font-size:12px; font-weight:600; color:#e7eef2;}
+.port_box h3{font-size:32px; height:83px; line-height:83px; font-weight:600; margin-left:25px;}
+.port_box h4{display:inline-block; line-height:24px; font-size:16px; font-weight:600; margin:20px 0 0 20px;}
+.port_box h4 span{display:block;font-size:12px; font-weight:normal; letter-spacing:-1px;}
+.port_box_12 h3{font-size:15px; height:67px; line-height:67px; font-weight:600; margin-left:25px;}
+.port_box_12 h3 span{font-size:13px; height:67px; line-height:67px; font-weight:600; margin-left:5px;}
+
+/* portlet_content */
+.port_box .content{margin:14px 24px;}
+.port_box_12 .content{margin:20px 30px;}
+
+.graphArea{width:368px; height:148px; }
+
+/* description */
+.description .content{margin:15px 25px;}
+.description ul li{line-height:18px; margin-top:18px; font-size:13px;}
+
+
+/* recent_country */
+.recent_country{position:absolute; top:10px; right:10px;}
+.recent_country ul{padding:0 15px 8px 15px; }
+.recent_country h6{font-size:13px; font-weight:600; height:30px; line-height:30px; padding:7px 15px 0 15px;}
+.recent_country ul li{font-size:13px; font-weight:600; line-height:24px;}
+.recent_country ul li span.new{display:inline-block !important; margin-left:6px;}
+.recent_country li ul{padding:0;}
+.recent_country li ul li{height:18px; line-height:18px; }
+.recent_country li li a{display:block; font-weight:normal; font-size:12px; color:#fff;}
+
+/* list_link */
+.list_link{position:absolute; top:10px; left:10px; display:inline-block; background:#23b1f7; padding:0 20px; height:43px; line-height:43px; text-align:center;}
+.list_link span{font-size:21px; font-weight:600; color:#fff; background:url(../images/btn_arr.png) no-repeat right center; padding:0 25px 0 0; letter-spacing:-0.5px;}
+.port_box_12 .title{height:69px;}
+.more{position:absolute; top:22px; right:20px;}
+
+/* quickmenu */
+.quickmenu{position:absolute; bottom:25px; left:30px;}
+.quickmenu h6{font-size:14px; font-weight:600;}
+.quickmenu ul{margin-top:10px;}
+.quickmenu li{height:26px; line-height:26px; background:url(../images/list_bullet.gif) no-repeat left center; padding-left:7px;}
+.quickmenu li a{color:#fff;}
+
+
+/* country */
+.country li{height:32px; line-height:32px;}
+.country li span{display:inline-block; width:78px; margin-right:10px; font-weight:600;}
+.country li p.graph{display:inline-block; width:230px; height:11px; margin-left:10px;}
+
+/* worldmap */
+.worldmap{position:absolute; top:0; left:0; width:842px; height:472px; background:url(../images/worldmap.gif) no-repeat center center;}
+.worldmap ul{position:absolute; top:82px; left:96px; width:579px; height:336px;}
+
+.value{position:absolute; bottom:20px; right:20px;}
+.value li{float:left; width:auto !important; height:12px; line-height:12px; padding-left:22px; margin-left:16px;}
+ul li.miniutes{width:12px; height:12px; background:url(../images/30seconds.png) no-repeat left center;}
+ul li.seconds{width:12px; height:12px; background:url(../images/10miniutes.png) no-repeat left center;}
+/* 63개국 */
+.country_01{position:absolute; top:172px; left:365px;}
+.country_02{position:absolute; bottom:77px; right:80px;}
+.country_03{position:absolute; top:126px; left:297px;}
+.country_04{position:absolute; top:140px; left:351px;}
+.country_05{position:absolute; top:120px; left:282px;}
+.country_06{position:absolute; top:227px; left:186px;}
+.country_07{position:absolute; top:137px; left:315px;}
+.country_08{position:absolute; top:95px; left:108px;}
+.country_09{position:absolute; top:260px; left:161px;}
+.country_10{position:absolute; top:142px; left:441px;}
+.country_11{position:absolute; top:205px; left:153px;}
+.country_12{position:absolute; top:215px; left:301px;}
+.country_13{position:absolute; top:177px; left:147px;}
+.country_14{position:absolute; top:121px; left:300px;}
+.country_15{position:absolute; top:108px; left:289px;}
+.country_16{position:absolute; top:215px; left:144px;}
+.country_17{position:absolute; top:165px; left:324px;}
+.country_18{position:absolute; top:114px; left:271px;}
+.country_19{position:absolute; top:100px; left:311px;}
+.country_20{position:absolute; top:172px; left:365px;}
+.country_21{position:absolute; top:87px; left:311px;}
+.country_22{position:absolute; top:124px; left:278px;}
+.country_23{position:absolute; top:117px; left:291px;}
+.country_24{position:absolute; top:143px; left:310px;}
+.country_25{position:absolute; top:127px; left:304px;}
+.country_26{position:absolute; top:84px; left:249px;}
+.country_27{position:absolute; top:175px; left:407px;}
+.country_28{position:absolute; top:220px; left:471px;}
+.country_29{position:absolute; top:154px; left:364px;}
+.country_30{position:absolute; top:112px; left:263px;}
+.country_31{position:absolute; top:158px; left:332px;}
+.country_32{position:absolute; top:136px; left:295px;}
+.country_33{position:absolute; top:135px; left:502px;}
+.country_34{position:absolute; top:122px; left:377px;}
+.country_35{position:absolute; top:212px; left:338px;}
+.country_36{position:absolute; top:140px; left:484px;}
+.country_37{position:absolute; top:122px; left:285px;}
+.country_38{position:absolute; top:205px; left:448px;}
+.country_39{position:absolute; top:171px; left:106px;}
+.country_40{position:absolute; top:120px; left:437px;}
+.country_41{position:absolute; top:172px; left:365px;}
+.country_42{position:absolute; top:116px; left:283px;}
+.country_43{position:absolute; top:93px; left:286px;}
+.country_44{position:absolute; top:227px; left:147px;}
+.country_45{position:absolute; top:192px; left:482px;}
+.country_46{position:absolute; top:115px; left:304px;}
+.country_47{position:absolute; top:142px; left:262px;}
+.country_48{position:absolute; top:129px; left:314px;}
+.country_49{position:absolute; top:79px; left:405px;}
+.country_50{position:absolute; top:171px; left:348px;}
+.country_51{position:absolute; top:211px; left:452px;}
+.country_52{position:absolute; top:268px; left:312px;}
+.country_53{position:absolute; top:140px; left:270px;}
+.country_54{position:absolute; top:259px; left:324px;}
+.country_55{position:absolute; top:84px; left:298px;}
+.country_56{position:absolute; top:128px; left:288px;}
+.country_57{position:absolute; top:171px; left:478px;}
+.country_58{position:absolute; top:184px; left:446px;}
+.country_59{position:absolute; top:143px; left:330px;}
+.country_60{position:absolute; top:122px; left:319px;}
+.country_61{position:absolute; top:140px; left:112px;}
+.country_62{position:absolute; top:134px; left:374px;}
+.country_63{position:absolute; top:189px; left:459px;}

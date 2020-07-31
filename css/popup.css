@@ -1,0 +1,90 @@
+@charset "utf-8"; 
+/* CSS Document */
+@import url("common.css");
+@import url("board.css");
+
+/* 팝업창 크기 */
+#popup{min-width:626px;}
+
+/* popup 공통 */
+body{background:#75a6c0; min-width:inherit;}
+
+/* title */
+.popup h4{font-size:16px; font-weight:600; height:69px; line-height:69px; background:url(../images/title_border.png) repeat-x left bottom; padding:0 0 0 20px;}
+
+/* contentArea */
+.popup .contentArea{margin:20px;}
+.popup .contentArea:after{clear:both; display:block; content:"";}
+.popup .contentArea div{margin-bottom:20px;}
+.popup .contentArea div p{font-size:15px; font-weight:600; margin-bottom:20px;}
+.popup .contentArea .result_scroll{height:280px; overflow:hidden; }
+.popup table td{padding:0 0 0 15px;}
+.popup .inputbox{margin-bottom:0 !important;}
+.popup div.sel_400{float:left; width:406px;}
+.popup input[type="text"].txt_400{width:376px;}
+.popup .contentArea .search .btnArea{margin:10px 0; }
+/* txtArea */
+.popup .txtArea{margin-bottom:14px !important;}
+.popup .txtArea p{height:24px; line-height:24px; font-size:12px !important; font-weight:normal !important; margin-bottom:0 !important;}
+
+/* result */
+.result{height:65px; line-height:65px; background:url(../images/bg_0.08.png) left top; text-align:center;}
+.result p{font-size:15px;}
+.result p em{font-weight:600; font-size:18px; text-decoration:underline;}
+
+/* button */
+/* btnArea */
+.btnArea{height:46px; text-align:center; margin-bottom:20px;}
+.rightArea{float:right; margin:0 !important;}
+/* btn_blue */
+.btn_blue{display:inline-block; height:36px; line-height:36px; background:#23b1f7; padding:0 15px; }
+.btn_blue span{font-size:14px; font-weight:600; color:#fff;}
+/* btn_close */
+.btn_close{position:absolute; top:0px; right:0px; width:69px; height:67px; background:url(../images/popup_title_border.png) repeat-y left top;}
+.btn_close img{margin:25px 0 0 29px;}
+div.last{margin-bottom:0 !important;}
+/* btn_darkblue */
+.btn_darkblue{display:inline-block; height:36px; line-height:36px; text-align:center; background:#5e889b; padding:0 15px;}
+.btn_darkblue span{font-size:14px; font-weight:600; color:#fff;}
+
+.column_2 td.first{padding:0 13px;}
+/* content_text */
+.content_text{background:url(../images/bg_0.08.png) left top; padding:20px;}
+.content_text div.scroll{height:450px; margin:0; padding:0; overflow:hidden;}
+.content_text p{line-height:32px; font-weight:normal !important; font-size:14px !important;}
+.content_text ul{margin-bottom:20px;}
+.content_text ul li{line-height:28px; font-size:13px;}
+.content_text ul li span{line-height:32px;font-size:14px; font-weight:600;}
+.content_text ul li li{line-height:28px;}
+.content_text ul li li span{font-weight:normal; font-size:13px;}
+.content_text ul li li li{lien-height:24px; font-size:12px;}
+/* scroll_363 */
+.scroll_363{height:363px; margin:0; padding:0; overflow:hidden;}
+/* country */
+.country li{height:32px; line-height:32px;}
+.country li span{display:inline-block; width:78px; margin-right:10px; font-weight:600;}
+.country li p.graph{display:inline-block; width:230px; height:11px; margin:0 0 0 10px;}
+
+.bullet li{background:url(../images/list_bullet.gif) no-repeat left 13px; padding-left:10px;}
+.no_bullet{background:none !important; padding:0 !important;}
+ol > li{margin-left:20px; list-style-type:decimal;} 
+ol > li > ul{margin-left:-20px;}
+
+/* 팝업헬프디자인수정_작업자:박지예_20160804 */
+/* popup_help */
+.popup_help{height:450px; overflow:hidden;}
+.popup_help div{margin-bottom:40px !important;}
+.popup_help h5{font-size:18px; font-weight:600; margin:0 0 15px 0;}
+.popup_help p{margin:0; padding:0;}
+.popup_help .content_text{padding:15px; margin:0 0 20px 0;}
+.popup_help .content_text li{font-size:13px; line-height:28px; padding-left:10px; margin:0;}
+.popup_help ul > li{line-height:28px; font-size:14px;}
+.popup_help ul{margin-bottom:20px;}
+.popup_help ul li p{font-weight:normal;}
+.popup_help ul li img{display:block; margin-top:10px;}
+.popup_help ul li span{line-height:36px; font-size:14px;}
+.popup_help ul ul{margin-left:15px;}
+.popup_help ul li li{margin:0; font-size:13px;}
+.popup_help ul li li span{font-weight:600; line-height:32px;}
+.popup_help ul li li li{line-height:28px; font-size:13px; margin:0;}
+.popup_help ul.left li{display:inline-block; margin-right:20px !important;}

@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="keywords" content="IOU" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>IOU</title>
+<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/sub.js"></script>
+</head>
+<body class="iframe">
+<!-- 게시판 쓰기 영역 -->
+<div class="board">
+    <!-- table-->
+    <table class="input" cellpadding="0" cellspacing="0" summary="게시판등록">
+    <caption>게시판등록</caption>
+        <colgroup>
+            <col width="15%" />
+            <col width="*%" />
+        </colgroup>
+        <tr>
+            <th class="L">Title</th>
+            <td><label for="title"></label><input type="text" id="title" class="title" /></td>
+        </tr>
+        <tr>
+            <th class="L">Posted period</th>
+            <td>
+                <fieldset>
+                    <form id="date" name="date" method="post" action="">
+                        <p class="date"><label for="date_01"></label><input type="text" id="date_01" class="txt_150" value="2014.01.01" /><a href="#"><img src="../images/icon_calendar.png" alt="date" /></a></p>
+                         ~ <p class="date"><label for="date_02"></label><input type="text" id="date_02" class="txt_150" value="2014.01.31" /><a href="#"><img src="../images/icon_calendar.png" alt="date" /></a> </p>
+                    </form>
+                </fieldset>                    
+            </td>
+        </tr>
+        <tr>
+            <th class="L">Publishers</th>
+            <td>manager</td>
+        </tr>
+        <tr>
+            <th class="L">Contents</th>
+            <td>
+                <span class="fieldset">
+                    <fieldset>
+                        <form id="conttxt" name="conttxt" method="post" action="">
+                            <p class="cotnets_type"><input type="radio" name="conttxt" value="일반 TEXT" id="conttxt_0" /><label for="conttxt_0">Normal TEXT</label></p>
+                            <p class="cotnets_type"><input type="radio" name="conttxt" value="HTML 편집기" id="conttxt_1" /><label for="conttxt_1">HTML Editor</label></p>
+                        </form>
+                    </fieldset>
+                </span>
+                <textarea name="conttxt" cols="" rows=""></textarea>
+            </td>
+        </tr>
+        <tr>
+            <th class="L">Attachments</th>
+            <td>
+                <div class="addFile">
+                    <div class="filelist">
+                        <p>File size can be up to 10M.</p>
+                        <select name="select" multiple="multiple" id="select">
+                            <option><span class="addfile">Hot_resource.xlsx</span></option>
+                            <option><span class="addfile">Hot_resource.xlsx</span></option>
+                            <option><span class="addfile">Hot_resource.xlsx</span></option>
+                            <option><span class="addfile">Hot_resource.xlsx</span></option>
+                            <option><span class="addfile">Hot_resource.xlsx</span></option>
+                        </select>
+                    </div>
+                    <input type="file" name="fileField" title="파일첨부" class="file_input" id="fileField" />
+                    <div class="boardLeftArea">
+                        <a href="#" class="btn_dark"><span>Attachments</span></a> <a href="#" class="btn_dark"><span>Delete</span></a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <!-- table//-->  
+    <!-- btnArea-->
+    <div class="btnArea">
+        <div class="iframeLeftArea"><a href="boardList_iframe.html" class="btn_darkblue"><span>List</span></a> <a href="boardWrite_iframe.html" class="btn_darkblue"><span>Modify</span></a> </div>
+        <div class="iframeRightArea"><a href="boardView_iframe.html" class="btn_darkblue"><span>Register</span></a> <a href="boardList_iframe.html" class="btn_darkblue"><span>Cancle</span></a></div>
+    </div>
+    <!-- btnArea//-->
+</div>
+<!-- 게시판 쓰기 영역 //-->
+</body>
+</html>

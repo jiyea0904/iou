@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="keywords" content="IOU" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>IOU</title>
+<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/sub.js"></script>
+</head>
+<body class="iframe">
+<!-- 게시판 리스트 영역 -->
+<div class="board">
+    <!-- searchArea-->
+    <div class="tsearchArea">
+        <p>Total: There are <strong>28,773</strong> posts</p>
+        <fieldset>
+            <form>
+                <div class="inputbox sel_100">
+                    <p class="txt"></p>
+                    <select id="list_order">
+                        <option>Totality</option>
+                        <option>제목</option>
+                        <option>제목 + 내용</option>
+                    </select>
+                </div> 
+                <p class="search_bar"><label for="search"></label><input type="text" class="txt_200" id="search" /><a class="btn_search" href="#"><img src="../images/icon_search.png" alt="search" /></a></p>
+            </form>
+        </fieldset>
+    </div>
+    <!-- searchArea//-->
+    <!-- table-->
+    <table class="board" cellpadding="0" cellspacing="0" summary="게시판리스트" >  
+        <caption>게시판리스트</caption>
+        <colgroup>
+            <col width="12%" />
+            <col width="*%" />
+            <col width="15%" />
+            <col width="15%" />
+            <col width="15%" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="C">No</th>
+                <th class="C">Title</th>
+                <th class="C">Publishers</th>
+                <th class="C">Date of Publication</th>
+                <th class="C">Look up</th>
+            </tr>
+        </thead>
+        <tbody>   
+            <tr>
+                <td class="C"><span class="notice">Notice</span></td>
+                <td class="L"><a href="#"><span class="title">Enter the title of the notice notice notice notice notice notice notice notice notice notice notice notice notice notice.</span><span><img src="../images/icon_new.gif" alt="새 게시물" /></span></a></td>
+                <td class="C">manager</td>
+                <td class="C">2016.12.10</td>
+                <td class="C">1111</td>
+            </tr>
+            <tr>
+                <td class="C"><span class="notice">Notice</span></td>
+                <td class="L"><a href="#"><span class="title">Enter the title of the notice.</span></a></td>
+                <td class="C">manager</td>
+                <td class="C">2016.12.10</td>
+                <td class="C">1111</td>
+            </tr>
+            <tr>
+                <td class="C">13</td>
+                <td class="L"><a href="#"><span class="title">Enter the title of the notice.</span></a></td>
+                <td class="C">manager</td>
+                <td class="C">2016.12.10</td>
+                <td class="C">1111</td>
+            </tr>
+            <tr>
+                <td class="C">12</td>
+                <td class="L"><a href="#"><span class="title">Enter the title of the notice.</span></a></td>
+                <td class="C">manager</td>
+                <td class="C">2016.12.10</td>
+                <td class="C">1111</td>
+            </tr>
+            <tr>
+                <td class="C">11</td>
+                <td class="L"><a href="#"><span class="title">Enter the title of the notice.</span></a></td>
+                <td class="C">manager</td>
+                <td class="C">2016.12.10</td>
+                <td class="C">1111</td>
+            </tr>
+            <tr>
+                <td class="C">10</td>
+                <td class="L"><a href="#"><span class="title">Enter the title of the notice.</span></a></td>
+                <td class="C">manager</td>
+                <td class="C">2016.12.10</td>
+                <td class="C">1111</td>
+            </tr>
+            <tr>
+                <td class="C">9</td>
+                <td class="L"><a href="#"><span class="title">Enter the title of the notice.</span></a></td>
+                <td class="C">manager</td>
+                <td class="C">2016.12.10</td>
+                <td class="C">1111</td>
+            </tr>
+            <tr>
+                <td class="C">8</td>
+                <td class="L"><a href="#"><span class="title">Enter the title of the notice.</span></a></td>
+                <td class="C">manager</td>
+                <td class="C">2016.12.10</td>
+                <td class="C">1111</td>
+            </tr>
+            <tr>
+                <td class="C">7</td>
+                <td class="L"><a href="#"><span class="title">Enter the title of the notice.</span></a></td>
+                <td class="C">manager</td>
+                <td class="C">2016.12.10</td>
+                <td class="C">1111</td>
+            </tr>
+            <tr>
+                <td class="C">6</td>
+                <td class="L"><a href="#"><span class="title">Enter the title of the notice.</span></a></td>
+                <td class="C">manager</td>
+                <td class="C">2016.12.10</td>
+                <td class="C">1111</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- table//-->
+    <!-- tcontrol-->
+    <div class="tcontrol">
+        <!-- paging -->
+        <div class="paging">            	
+        <a href="#" title="처음페이지"><img src="../images/btn_first.gif" alt="첫 페이지로 이동" /></a> <a href="#" title="이전페이지"><img src="../images/btn_prev.gif" alt="이전 페이지로 이동" /></a> <a href="#" class="first">1</a> <a href="#" class="on">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#"><img src="../images/btn_next.gif" alt="다음 페이지로 이동" title="다음페이지"/></a> <a href="#"><img src="../images/btn_last.gif" alt="마지막 페이지로 이동" title="마지막페이지"/></a>
+        </div>
+        <!-- paging//-->
+    </div>
+    <!-- tcontrol//-->
+    <!-- btnArea-->
+    <div class="btnArea">
+        <div class="iframeRightArea"><a class="btn_darkblue" href="boardWrite_iframe.html"><span>Register</span></a></div>
+    </div>
+    <!-- btnArea//-->
+</div>
+<!-- 게시판 리스트 영역 //-->
+</body>
+</html>

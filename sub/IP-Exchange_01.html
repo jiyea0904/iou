@@ -1,0 +1,618 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="keywords" content="IOU" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>IOU</title>
+<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+<link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="../js/sub.js"></script>
+<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+</head>
+<body>
+<!-- header -->
+<div id="header">
+    <!-- mainmenu -->
+    <div class="mainmenu">
+        <h1><a href="../main.html"><img src="../images/logo.png" alt="IOU 로고" /></a></h1>
+        <ul class="gnb">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">INTRODUCTION</a></li>
+            <li><a href="#">IP-EXCHANGE</a></li>
+            <li><a href="#">DATA ANALYSIS</a></li>
+            <li><a href="#">MEMBER</a></li>
+        </ul>
+        <div class="loginfo">
+            <ul>
+                <li class="first member_info"><a href="#">Ahn Cheol Soo (KR)</a></li>
+                <li><a href="#">Log Out</a></li>
+                <li class="mypage"><a href="#">My Page</a>
+                	<div class="menu_mypage">
+                    	<ul>
+                        	<li><a href="MyPage_01.html">My inquiry status</a></li>
+                            <li><a href="MyPage_02.html">My brokerage list</a></li>
+                            <li><a href="MyPage_03.html"><span>Modify member’s information</span></a></li>
+                            <li><a href="MyPage_04.html">Withdrawal</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="last"><a href="Usage_01.html">Sitemap</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- mainmenu //-->
+	<!-- submenu -->
+    <div class="submenu">
+        <div class="wrap">
+            <div class="banner">
+                <div id="slider">
+                    <div class="popup_warp">
+                        <!-- 롤링되는 이미지 추가시, 클래스명 참고하여 이미지 추가하면 됩니다. -->
+                        <div id="pimg01" class="popup_con"><div class="pimg01"></div><a href="#" class="more">More</a></div>
+                        <div id="pimg02" class="popup_con"><div class="pimg02"></div><a href="#" class="more">More</a></div>
+                        <div id="pimg03" class="popup_con"><div class="pimg03"></div><a href="#" class="more">More</a></div>
+                        <div id="pimg04" class="popup_con"><div class="pimg04"></div><a href="#" class="more">More</a></div>
+                    </div>
+                    <div class="pop_navi">
+                        <span class="navi_pop">
+                            <a href="#" id="paimg01" class="on"></a>
+                            <a href="#" id="paimg02"></a>
+                            <a href="#" id="paimg03"></a>
+                            <a href="#" id="paimg04"></a>
+                        </span>
+                        <button class="popup_btn_stop" title="메인 슬라이드 정지"><span>정지</span></button>
+                        <button class="popup_btn_play" title="메인 슬라이드 시작"><span>시작</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <ul class="menu_01">
+                    <li><a href="introduction_01.html">IP-Exchange</a></li>
+                    <li><a href="introduction_02.html">About IOU</a></li>
+                    <li><a href="introduction_03.html">IOU Service</a></li>
+                    <li><a href="introduction_04.html">Organization</a></li>
+                    <li><a href="introduction_05.html">Global Organization</a></li>
+                    <li><a href="introduction_06.html">Contact us</a></li>
+                </ul>
+                <ul class="menu_02">
+                    <li><a href="IP-Exchange_01.html">Attracting incoming<span>(for IP-Firms)</span></a></li>
+                    <li><a href="IP-Exchange_01.html">IP-Exchange, Etc<span>(for IP-Firms, Applicants)</span></a></li>
+                </ul>
+                <ul class="menu_03">
+                    <li><a href="IP-Firm_01_incoming.html">Precision analysis<span>(of individual countries)</span></a></li>
+                    <li><a href="IP-Firm_02.html">Integrated analysis<span>(of full-country)</span></a></li>
+                    <li><a href="IP-Firm_03.html">Optimal design<span>(for IP-Exchange)</span></a></li>
+                </ul>
+                <ul class="menu_04">
+                    <li><a href="Members&Community_01.html">Help</a></li>
+                    <li><a href="Members&Community_02.html">Business proposal</a></li>
+                    <li><a href="Members&Community_03.html">Members PR</a></li>
+                    <li><a href="Members&Community_04.html">Public project</a></li>
+                    <li><a href="Members&Community_05.html">Notice</a></li>
+                    <li><a href="Members&Community_06.html">1:1 Consulting</a></li>
+                    <li><a href="Members&Community_07.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- submenu //-->
+</div>
+<!-- header //-->
+<!-- contents -->
+<div id="contents">
+	<!-- title -->
+	<div class="title">
+    	<h2>IP-Exchange<a class="btn_help" href="Members_01.html"><img src="../images/icon_help.png" alt="help" /></a></h2>
+        <div class="pageNav">
+        	<span><a href="#"><img src="../images/icon_home.png" alt="home" /></a></span><span class="here"><a href="#">IP-Exchange request</a></span>
+        </div>
+    </div>
+    <!-- title //-->
+    <!-- fullcontents -->
+    <div class="fullcontents">
+        <!-- usage -->
+        <div class="usage opacity_13">
+            <h5>Usage</h5>
+            <ul>
+                <li>① Select the purpose of Request [A]: Attracting Incoming [B]: IP-Exchange [C]: Acyclic IP-Exchange or Optimization <span>(Those who use this for the first time should refer to the above ? ) </span></li>
+                <li>② Requests received, IOU is to embark on Brokerage procedures by E-mail. </li>
+            </ul>
+        </div>
+        <!-- usage //-->
+    </div>
+    <!-- fullcontents //-->
+    <!-- leftArea -->
+    <div class="leftArea">
+        <!-- purpose -->
+        <div class="opacity_13 first purpose">
+            <h4>Select purpose<a href="#"></a></h4>
+            <div class="content">
+                <p><input type="radio" name="purpose" id="perpose_01" /><label for="perpose_01">Attracting incoming  (A)</label></p>
+                <p><input type="radio" name="purpose" id="perpose_02" /><label for="perpose_02">IP-Exchange, Etc (B) or (C)</label></p>
+                <ul>
+                    <li>
+                        <span class="title">Application date</span>
+                        <p><label for="application_date"></label><input type="text" id="application_date" value="DD-MM-YY" /><a href="#"><img src="../images/icon_calendar.png" alt="date" /></a></p>
+                    </li>
+                    <li>
+                        <span class="title">Application country</span>
+                        <p><label for="application_country"></label><input type="text" id="application_country" value="Select Country" /><a href="#"><img src="../images/icon_search.png" alt="search" /></a></p>
+                    </li>
+                </ul>
+                <a class="btn_blue" href="#"><span>Request</span></a>
+            </div>
+        </div>
+        <!-- purpose //-->
+        <!-- This month -->
+        <div class="this_month">
+            <h4>This month (6 major countries)</h4>
+            <div class="content">
+                <div class="scroll_560 scroll">
+                    <ul>
+                        <li class="first"><span class="title">US (TO)</span>
+                            <ul>
+                                <li>
+                                    <span class="country_title">JP</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">CN</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">KR</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">DE</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">GB</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span class="title">KR (TO)</span>
+                            <ul>
+                                <li>
+                                    <span class="country_title">US</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">JP</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">CN</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">DE</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">GB</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span class="title">DE (TO)</span>
+                            <ul>
+                                <li>
+                                    <span class="country_title">US</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">JP</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">CN</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">KR</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">GB</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span class="title">JP (TO)</span>
+                            <ul>
+                                <li>
+                                    <span class="country_title">US</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">CN</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">KR</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">DE</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">GB</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span class="title">CN (TO)</span>
+                            <ul>
+                                <li>
+                                    <span class="country_title">US</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">KR</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">JP</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">DE</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">GB</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span class="title">GB (TO)</span>
+                            <ul>
+                                <li>
+                                    <span class="country_title">US</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">CN</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">KR</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">JP</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                                <li>
+                                    <span class="country_title">DE</span>
+                                    <p class="count"><span class="first"></span><span></span><span></span><span></span><span></span><span></span></p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- This month //-->
+    </div>
+    <!-- leftArea //-->
+    <!-- contentsArea -->
+    <div class="contentsArea">
+        <!-- list of request -->
+        <div class="opacity_8 first purpose">
+            <h4>Real-time, list of request</h4>
+            <div class="content">
+                <ul class="table"> 
+                    <li class="thead">
+                    	<ul>
+                            <li class="no C" ><span id="testno">NO</span></li>
+                            <li class="purpo C">Purpose</li>
+                            <li class="from L">From  (Source country)</li>
+                            <li class="gap C">&nbsp;</li>
+                            <li class="to L">To (Application country)</li>
+                            <li class="appdate C">Application date</li>
+                            <li class="private C">Applicant  information (Private)</li>
+                        </ul>
+					</li>
+                    <li>  
+                    	<div id="a1" class="article">
+                            <ul class="tbody">
+                                <li class="no C"><img src="../images/icon_new.gif" alt="new" /></li>
+                                <li class="purpo C">A</li>
+                                <li class="from L">Any Country</li>
+                                <li class="gap C">→</li>
+                                <li class="to L">NEPAL</li>
+                                <li class="appdate C">160506</li>
+                                <li class="private C">**** ***** **** **** ***</li>
+                            </ul>
+                        </div>
+                    	<div id="a2" class="article">
+                            <ul class="tbody">
+                                <li class="no C"><img src="../images/icon_new.gif" alt="new" /></li>
+                                <li class="purpo C">A</li>
+                                <li class="from L">Any Country</li>
+                                <li class="gap C">→</li>
+                                <li class="to L">NEPAL</li>
+                                <li class="appdate C">160506</li>
+                                <li class="private C">**** ***** **** **** ***</li>
+                            </ul>
+                        </div>
+                    	<div id="a3" class="article"> 
+                            <ul class="tbody">
+                                <li class="no C"><img src="../images/icon_new.gif" alt="new" /></li>
+                                <li class="purpo C">A</li>
+                                <li class="from L">Any Country</li>
+                                <li class="gap C">→</li>
+                                <li class="to L">NEPAL</li>
+                                <li class="appdate C">160506</li>
+                                <li class="private C">**** ***** **** **** ***</li>
+                            </ul>
+                        </div>
+                    	<div id="a4" class="article"> 
+                            <ul class="tbody">
+                                <li class="no C"><img src="../images/icon_new.gif" alt="new" /></li>
+                                <li class="purpo C">A</li>
+                                <li class="from L">Any Country</li>
+                                <li class="gap C">→</li>
+                                <li class="to L">NEPAL</li>
+                                <li class="appdate C">160506</li>
+                                <li class="private C">**** ***** **** **** ***</li>
+                            </ul>
+                        </div>
+                    	<div id="a5" class="article">
+                            <ul class="tbody">
+                                <li class="no C"><img src="../images/icon_new.gif" alt="new" /></li>
+                                <li class="purpo C">A</li>
+                                <li class="from L">Any Country</li>
+                                <li class="gap C">→</li>
+                                <li class="to L">NEPAL</li>
+                                <li class="appdate C">160506</li>
+                                <li class="private C">**** ***** **** **** ***</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- list of request //-->
+        <!-- Recent_request_list  -->
+        <div class="opacity_8 recent">
+            <h4>Recent request list<a class="refresh" href="#"><span>REFRESH</span></a></h4>
+            <div class="content">
+            	<div class="table_thead">
+                    <table cellpadding="0" cellspacing="0" summary="Recent_request_list" >  
+                    <caption>Real-time, list of request</caption>
+                        <colgroup>
+                            <col width="8%" />
+                            <col width="8%" />
+                            <col width="19%" />
+                            <col width="5%" />
+                            <col width="20%" />
+                            <col width="14%" />
+                            <col width="*" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="C">NO</th>
+                                <th class="C">Purpose</th>
+                                <th class="L">From  (Source country)</th>
+                                <th class="C"></th>
+                                <th class="L">To (Application country)</th>
+                                <th class="C">Application date</th>
+                                <th class="C">Applicant  information (Private)</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="scroll_520 scroll">
+                    <table cellpadding="0" cellspacing="0" summary="Recent_request_list" >  
+                    <caption>Real-time, list of request</caption>
+                        <colgroup>
+                            <col width="8%" />
+                            <col width="8%" />
+                            <col width="19%" />
+                            <col width="5%" />
+                            <col width="20%" />
+                            <col width="12%" />
+                            <col width="*" />
+                        </colgroup>
+                        <tbody>   
+                            <tr>
+                                <td class="C"><img src="../images/icon_new.gif" alt="new" /></td>
+                                <td class="C">A</td>
+                                <td class="L">Any Country</td>
+                                <td class="C">→</td>
+                                <td class="L">NEPAL</td>
+                                <td class="C">160506</td>
+                                <td class="C">**** ***** **** **** ***</td>
+                            </tr>
+                            <tr>
+                                <td class="C"><img src="../images/icon_new.gif" alt="new" /></td>
+                                <td class="C">A</td>
+                                <td class="L">Any Country</td>
+                                <td class="C">→</td>
+                                <td class="L">NEPAL</td>
+                                <td class="C">160506</td>
+                                <td class="C">**** ***** **** **** ***</td>
+                            </tr>
+                            <tr>
+                                <td class="C"><img src="../images/icon_new.gif" alt="new" /></td>
+                                <td class="C">A</td>
+                                <td class="L">Any Country</td>
+                                <td class="C">→</td>
+                                <td class="L">NEPAL</td>
+                                <td class="C">160506</td>
+                                <td class="C">**** ***** **** **** ***</td>
+                            </tr>
+                            <tr>
+                                <td class="C">699464</td>
+                                <td class="C">A</td>
+                                <td class="L">Any Country</td>
+                                <td class="C">→</td>
+                                <td class="L">NEPAL</td>
+                                <td class="C">160506</td>
+                                <td class="C">**** ***** **** **** ***</td>
+                            </tr>
+                            <tr>
+                                <td class="C">699463</td>
+                                <td class="C">A</td>
+                                <td class="L">Any Country</td>
+                                <td class="C">→</td>
+                                <td class="L">NEPAL</td>
+                                <td class="C">160506</td>
+                                <td class="C">**** ***** **** **** ***</td>
+                            </tr>
+                            <tr>
+                                <td class="C">699462</td>
+                                <td class="C">A</td>
+                                <td class="L">Any Country</td>
+                                <td class="C">→</td>
+                                <td class="L">NEPAL</td>
+                                <td class="C">160506</td>
+                                <td class="C">**** ***** **** **** ***</td>
+                            </tr>
+                            <tr>
+                                <td class="C">699461</td>
+                                <td class="C">A</td>
+                                <td class="L">Any Country</td>
+                                <td class="C">→</td>
+                                <td class="L">NEPAL</td>
+                                <td class="C">160506</td>
+                                <td class="C">**** ***** **** **** ***</td>
+                            </tr>
+                            <tr>
+                                <td class="C">699460</td>
+                                <td class="C">A</td>
+                                <td class="L">Any Country</td>
+                                <td class="C">→</td>
+                                <td class="L">NEPAL</td>
+                                <td class="C">160506</td>
+                                <td class="C">**** ***** **** **** ***</td>
+                            </tr>
+                            <tr>
+                                <td class="C">699459</td>
+                                <td class="C">A</td>
+                                <td class="L">Any Country</td>
+                                <td class="C">→</td>
+                                <td class="L">NEPAL</td>
+                                <td class="C">160506</td>
+                                <td class="C">**** ***** **** **** ***</td>
+                            </tr>
+                            <tr>
+                                <td class="C">699458</td>
+                                <td class="C">A</td>
+                                <td class="L">Any Country</td>
+                                <td class="C">→</td>
+                                <td class="L">NEPAL</td>
+                                <td class="C">160506</td>
+                                <td class="C">**** ***** **** **** ***</td>
+                            </tr>
+                            <tr>
+                                <td class="C">699457</td>
+                                <td class="C">A</td>
+                                <td class="L">Any Country</td>
+                                <td class="C">→</td>
+                                <td class="L">NEPAL</td>
+                                <td class="C">160506</td>
+                                <td class="C">**** ***** **** **** ***</td>
+                            </tr>
+                            <tr>
+                                <td class="C">699456</td>
+                                <td class="C">A</td>
+                                <td class="L">Any Country</td>
+                                <td class="C">→</td>
+                                <td class="L">NEPAL</td>
+                                <td class="C">160506</td>
+                                <td class="C">**** ***** **** **** ***</td>
+                            </tr>
+                            <tr>
+                                <td class="C">699455</td>
+                                <td class="C">A</td>
+                                <td class="L">Any Country</td>
+                                <td class="C">→</td>
+                                <td class="L">NEPAL</td>
+                                <td class="C">160506</td>
+                                <td class="C">**** ***** **** **** ***</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Recent_request_list //-->
+    </div>
+</div>
+<!-- contents //-->
+<!-- footer -->
+<div id="footer">
+    <ul class="footermenu">
+        <li class="first"><a href="introduction_02.html">About IOU</a></li>
+        <li><a href="Members&Community_02.html">Business proposal</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Refuse unauthorized e-mail collecting</a></li>
+        <li><a href="Members&Community_06.html">1:1 Consulting</a></li>
+    </ul>
+    <ul class="copyright">
+        <li><em>[135-910]</em> 16th 503  Nonhyeon-ro   Gangnam-gu, Seoul, 135-910  Republic of Korea</li>
+        <li>© Copyright 2016 Incoming &amp; Outgoing Union</li>
+    </ul>
+    <div class="rightArea">
+        <div class="help">
+            <div class="inputbox">
+                <p class="txt"></p>
+                <select id="language">
+                    <option>Help Language select</option>
+                    <option>English</option>
+                    <option>Korea</option>
+                    <option>Chinese</option>
+                    <option>Japanese</option>
+                    <option>Germany</option>
+                    <option>French</option>
+                    <option>Spanish</option>
+                </select>
+            </div> 
+            <a href="#" class="searchbtn"><span>GO</span></a>
+        </div>
+        <div class="site">
+            <div class="inputbox">
+                <p class="txt"></p>
+                <select id="site" name="site" onchange="location.href=this.value">
+                    <option>Related Sites</option>
+                    <option value="http://worldwide.espacenet.com/?locale=en_EP">European Patent Office patent search site</option>
+                    <option value="http://eng.kipris.or.kr/enghome/main.jsp">Republic of Korea Intellectual Property Office patent search site</option>
+                    <option value="https://patentscope.wipo.int/search/en/structuredSearch.jsf;jsessionid=D0AA37437B23742BB6869AA659AEA7D9.wapp1nC">WIPO patent search site</option>
+                    <option value="https://www4.j-platpat.inpit.go.jp/eng/tokujitsu/tkbs_en/TKBS_EN_GM101_Top.action">JP Patent Office patent search site</option>
+                    <option value="http://portal.uspto.gov/pair/PublicPair">United States Patent and Trademark Office patent search site</option>
+                    <option value="http://pericles.ipaustralia.gov.au/ols/auspat/quickSearch.do">Australian Patent Office patent search site</option>
+                    <option value="http://www.iponz.govt.nz/app/Extra/Default.aspx?sid=636015190108676589">New Zealand Patent Office patent search site</option>
+                    <option value="http://www.pss-system.gov.cn/sipopublicsearch/ensearch/searchEnHomeIndexAC.do">CN Patent Office patent search site</option>
+                    <option value="https://www.ipo.gov.uk/types/patent/p-os/p-find/p-ipsum.htm">GB Patent Office patent search site</option>
+                    <option value="https://register.dpma.de/DPMAregister/pat/uebersicht?lang=en">DE Patent Office patent search site</option>
+                    <option value="http://121.58.254.45/ipophilsearch/patentsearch.aspx">Philippine Intellectual Property Office patent search site</option>
+                    <option value="http://www.ic.gc.ca/opic-cipo/cpd/eng/introduction.html">Canadian Intellectual Property Office patent search site</option>
+                    <option value="http://www.rupto.ru/rupto/portal/96bb3146-3081-11e1-351c-9c8e9921fb2c?lang=en">Russian Patent Office patent search site</option>
+                    <option value="http://onlineweb.dkpto.dk/pvsonline/Patent">Danish Patent Office patent search site</option>
+                    <option value="www.aippi.org">International Association for the Protection of Intellectual Property (AIPPI)</option>
+                    <option value="www.inta.org">International Trademark Association (INTA)</option>
+                    <option value="www.aipla.org">American Intellectual Property Law Association (AIPLA)</option>
+                    <option value="http://www.apaaonline.org/">Asian Patent Attorneys Association (APAA)</option>
+                </select>
+            </div>
+        </div> 
+    </div>
+</div>
+<!-- footer //-->    
+
+</body>
+</html>

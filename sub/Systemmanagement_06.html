@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="keywords" content="IOU" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>IOU</title>
+<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+<link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="../js/sub.js"></script>
+<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+</head>
+<body>
+<!-- header -->
+<div id="header">
+    <!-- mainmenu -->
+    <div class="mainmenu">
+        <h1><a href="../main.html"><img src="../images/logo.png" alt="IOU 로고" /></a></h1>
+        <ul class="gnb">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">INTRODUCTION</a></li>
+            <li><a href="#">IP-EXCHANGE</a></li>
+            <li><a href="#">DATA ANALYSIS</a></li>
+            <li><a href="#">MEMBER</a></li>
+        </ul>
+        <div class="loginfo">
+            <ul>
+                <li class="first member_info"><a href="#">Ahn Cheol Soo (KR)</a></li>
+                <li><a href="#">Log Out</a></li>
+                <li class="mypage"><a href="#">My Page</a>
+                	<div class="menu_mypage">
+                    	<ul>
+                        	<li><a href="MyPage_01.html">My inquiry status</a></li>
+                            <li><a href="MyPage_02.html">My brokerage list</a></li>
+                            <li><a href="MyPage_03.html"><span>Modify member’s<br />information</span></a></li>
+                            <li><a href="MyPage_04.html">Withdrawal</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="last"><a href="Usage_01.html">Sitemap</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- mainmenu //-->
+	<!-- submenu -->
+    <div class="submenu">
+        <div class="wrap">
+            <div class="banner">
+                <div id="slider">
+                    <div class="popup_warp">
+                        <!-- 롤링되는 이미지 추가시, 클래스명 참고하여 이미지 추가하면 됩니다. -->
+                        <div id="pimg01" class="popup_con"><div class="pimg01"></div><a href="#" class="more">More</a></div>
+                        <div id="pimg02" class="popup_con"><div class="pimg02"></div><a href="#" class="more">More</a></div>
+                        <div id="pimg03" class="popup_con"><div class="pimg03"></div><a href="#" class="more">More</a></div>
+                        <div id="pimg04" class="popup_con"><div class="pimg04"></div><a href="#" class="more">More</a></div>
+                    </div>
+                    <div class="pop_navi">
+                        <span class="navi_pop">
+                            <a href="#" id="paimg01" class="on"></a>
+                            <a href="#" id="paimg02"></a>
+                            <a href="#" id="paimg03"></a>
+                            <a href="#" id="paimg04"></a>
+                        </span>
+                        <button class="popup_btn_stop" title="메인 슬라이드 정지"><span>정지</span></button>
+                        <button class="popup_btn_play" title="메인 슬라이드 시작"><span>시작</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <ul class="menu_01">
+                    <li><a href="introduction_01.html">IP-Exchange</a></li>
+                    <li><a href="introduction_02.html">About IOU</a></li>
+                    <li><a href="introduction_03.html">IOU Service</a></li>
+                    <li><a href="introduction_04.html">Organization</a></li>
+                    <li><a href="introduction_05.html">Global Organization</a></li>
+                    <li><a href="introduction_06.html">Contact us</a></li>
+                </ul>
+                <ul class="menu_02">
+                    <li><a href="IP-Exchange_01.html">Attracting incoming<span>(for IP-Firms)</span></a></li>
+                    <li><a href="IP-Exchange_01.html">IP-Exchange, Etc<span>(for IP-Firms, Applicants)</span></a></li>
+                </ul>
+                <ul class="menu_03">
+                    <li><a href="IP-Firm_01_incoming.html">Precision analysis<span>(of individual countries)</span></a></li>
+                    <li><a href="IP-Firm_02.html">Integrated analysis<span>(of full-country)</span></a></li>
+                    <li><a href="IP-Firm_03.html">Optimal design<span>(for IP-Exchange)</span></a></li>
+                </ul>
+                <ul class="menu_04">
+                    <li><a href="Members&Community_01.html">Help</a></li>
+                    <li><a href="Members&Community_02.html">Business proposal</a></li>
+                    <li><a href="Members&Community_03.html">Members PR</a></li>
+                    <li><a href="Members&Community_04.html">Public project</a></li>
+                    <li><a href="Members&Community_05.html">Notice</a></li>
+                    <li><a href="Members&Community_06.html">1:1 Consulting</a></li>
+                    <li><a href="Members&Community_07.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- submenu //-->
+</div>
+<!-- header //-->
+<!-- contents -->
+<div id="contents">
+	<!-- title -->
+	<div class="title">
+    	<h2>특허사무소 병합관리</h2>
+        <div class="pageNav">
+        	<span><a href="#"><img src="../images/icon_home.png" alt="home" /></a></span><span><a href="#">시스템관리</a></span><span class="here"><a href="#">특허사무소관리</a></span>
+        </div>
+    </div>
+    <!-- title //-->
+    <!-- fullcontents -->
+    <div class="fullcontents">
+        <!-- usage -->
+        <div class="usage opacity_13">
+            <h5>Usage</h5>
+            <ul>
+                <li>① 대표사무소로 등록된 사무소 중 유사한 경우를 병합하여 관리하는 화면입니다.</li>
+            </ul>
+        </div>
+        <!-- usage //-->
+        <!-- searchbarArea -->
+        <div class="searchbarArea">
+            <!-- search -->
+            <div class="search opacity_8">
+                <ul>
+                	<li><span class="title">국가</span>
+                        <p><label for="select_country"></label><input type="text" id="select_country" value="국가 선택" /><a class="btn_search" href="#"><img src="../images/icon_search.png" alt="search" /></a></p>
+                    </li>
+                    <li><span class="title">대표 사무소 명</span>
+                        <p><label for="company_name"></label><input type="text" id="company_name" value="사무소 명 입력" /></p>
+                    </li>
+                    <li><span class="title">사무소 주소</span>
+                        <p><label for="company_adress"></label><input type="text" class="txt_adress" id="company_adress" value="사무소 주소 입력" /></p>
+                    </li>
+                </ul>
+            </div>
+            <!-- search -->
+            <!-- btnArea -->
+            <div class="btnArea">
+                <a class="btn_blue" href="#"><span>Search</span></a>
+                <a class="btn_darkblue" href="#"><span>Mergining</span></a>
+            </div>
+            <!-- btnArea //-->
+        </div>
+        <!-- searchbarArea //-->
+        <!-- margining_set -->
+        <div class="opacity_8">
+        	<!-- content -->
+            <div class="content">
+            	<!-- box_left  -->
+            	<div class="box_left">
+                    <div class="table_thead">
+                        <table cellpadding="0" cellspacing="0" summary="list_request" >  
+                        <caption>Real-time, list of request</caption>
+                            <colgroup>
+                                <col width="10%" />
+                                <col width="6%" />
+                                <col width="12%" />
+                                <col width="30%" />
+                                <col width="*" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="C">NO</th>
+                                    <th class="C"><input type="checkbox" name="check_00" id="check_00" /><label for="check_00"></label></th>
+                                    <th class="C">국가</th>
+                                    <th class="C">대표 사무소 명</th>
+                                    <th class="C">주소</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="scroll_360 scroll">
+                        <table cellpadding="0" cellspacing="0" summary="list_request" >  
+                        <caption>Real-time, list of request</caption>
+                            <colgroup>
+                                <col width="10%" />
+                                <col width="6%" />
+                                <col width="12%" />
+                                <col width="30%" />
+                                <col width="*" />
+                            </colgroup>
+                            <tbody>   
+                                <tr class="click">
+                                    <td class="C">1</td>
+                                    <td class="C"><input type="checkbox" name="check_01" id="check_01" checked="checked" /><label for="check_01"></label></td>
+                                    <td class="C">KR</td>
+                                    <td class="L">Astran International IP Group</td>
+                                    <td class="C">*</td>
+                                </tr>
+                                <tr>
+                                    <td class="C">2</td>
+                                    <td class="C"><input type="checkbox" name="check_02" id="check_02" /><label for="check_02"></label></td>
+                                    <td class="C">KR</td>
+                                    <td class="L">JOOWON Law Firm</td>
+                                    <td class="C">*</td>
+                                </tr>
+                                <tr>
+                                    <td class="C">3</td>
+                                    <td class="C"><input type="checkbox" name="check_03" id="check_03" /><label for="check_03"></label></td>
+                                    <td class="C">KR</td>
+                                    <td class="L">CHANG &amp; HAN</td>
+                                    <td class="C">*</td>
+                                </tr>
+                                <tr>
+                                    <td class="C">4</td>
+                                    <td class="C"><input type="checkbox" name="check_04" id="check_04" /><label for="check_04"></label></td>
+                                    <td class="C">KR</td>
+                                    <td class="L">CHEON JEE Firm</td>
+                                    <td class="C">*</td>
+                                </tr>
+                                <tr>
+                                    <td class="C">5</td>
+                                    <td class="C"><input type="checkbox" name="check_05" id="check_05" /><label for="check_05"></label></td>
+                                    <td class="C">KR</td>
+                                    <td class="L">CHOONGMU Patent Firm</td>
+                                    <td class="C">*</td>
+                                </tr>
+                                <tr>
+                                    <td class="C"></td>
+                                    <td class="C"></td>
+                                    <td class="C"></td>
+                                    <td class="L"></td>
+                                    <td class="C"></td>
+                                </tr>
+                                <tr>
+                                    <td class="C"></td>
+                                    <td class="C"></td>
+                                    <td class="C"></td>
+                                    <td class="L"></td>
+                                    <td class="C"></td>
+                                </tr>
+                                <tr>
+                                    <td class="C"></td>
+                                    <td class="C"></td>
+                                    <td class="C"></td>
+                                    <td class="L"></td>
+                                    <td class="C"></td>
+                                </tr>
+                                <tr>
+                                    <td class="C"></td>
+                                    <td class="C"></td>
+                                    <td class="C"></td>
+                                    <td class="L"></td>
+                                    <td class="C"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- tcontrol-->
+                    <div class="tcontrol">
+                        <!-- paging -->
+                        <div class="paging">            	
+                        <a href="#" title="처음페이지"><img src="../images/btn_first.gif" alt="첫 페이지로 이동" /></a> <a href="#" title="이전페이지"><img src="../images/btn_prev.gif" alt="이전 페이지로 이동" /></a> <a href="#" class="first">1</a> <a href="#" class="on">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#"><img src="../images/btn_next.gif" alt="다음 페이지로 이동" title="다음페이지"/></a> <a href="#"><img src="../images/btn_last.gif" alt="마지막 페이지로 이동" title="마지막페이지"/></a>
+                        </div>
+                        <!-- paging//-->
+                    </div>
+                    <!-- tcontrol//-->
+                </div>
+                <!-- box_left //-->
+                <!-- btn_chose -->
+                <div class="btn_chose">
+                    <a href="#"><img src="../images/btn_last.gif" alt="add" /></a>
+                    <a href="#"><img src="../images/btn_first.gif" alt="delete" /></a>
+                </div>
+                <!-- btn_chose //-->
+                <!-- box_right -->
+                <div class="box_right">
+                    <div class="table_thead">
+                        <table cellpadding="0" cellspacing="0" summary="list_request" >  
+                        <caption>Real-time, list of request</caption>
+                            <colgroup>
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="*%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="C"><input type="checkbox" name="check_000" id="check_000" /><label for="check_000"></label></th>
+                                    <th class="C">대표</th>
+                                    <th class="C">대표 사무소 명</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="scroll_360 scroll">
+                        <table cellpadding="0" cellspacing="0" summary="list_request" >  
+                        <caption>Real-time, list of request</caption>
+                            <colgroup>
+                                <col width="15%" />
+                                <col width="15%" />
+                                <col width="*%" />
+                            </colgroup>
+                            <tbody>   
+                                <tr>
+                                    <td class="C"><input type="checkbox" name="check_001" id="check_001" /><label for="check_001"></label></td>
+                                    <td class="C"><input type="radio" name="main" id="main_01" /><label for="main_01"></label></td>
+                                    <td class="L">Astran International IP Group</td>
+                                </tr>
+                                <tr>
+                                    <td class="C"><input type="checkbox" name="check_002" id="check_002" /><label for="check_002"></label></td>
+                                    <td class="C"><input type="radio" name="main" id="main_02" /><label for="main_02"></label></td>
+                                    <td class="L">CHEON JEE Patent and</td>
+                                </tr>
+                                <tr>
+                                    <td class="C"><input type="checkbox" name="check_003" id="check_003" /><label for="check_003"></label></td>
+                                    <td class="C"><input type="radio" name="main" id="main_03" /><label for="main_03"></label></td>
+                                    <td class="L">CHOONGMU Patent and</td>
+                                </tr>
+                                <tr>
+                                    <td class="C"></td>
+                                    <td class="C"></td>
+                                    <td class="L"></td>
+                                </tr>
+                                <tr>
+                                    <td class="C"></td>
+                                    <td class="C"></td>
+                                    <td class="L"></td>
+                                </tr>
+                                <tr>
+                                    <td class="C"></td>
+                                    <td class="C"></td>
+                                    <td class="L"></td>
+                                </tr>
+                                <tr>
+                                    <td class="C"></td>
+                                    <td class="C"></td>
+                                    <td class="L"></td>
+                                </tr>
+                                <tr>
+                                    <td class="C"></td>
+                                    <td class="C"></td>
+                                    <td class="L"></td>
+                                </tr>
+                                <tr>
+                                    <td class="C"></td>
+                                    <td class="C"></td>
+                                    <td class="L"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- box_right //-->
+            </div>
+            <!-- content //-->
+        </div>
+        <!-- margining_set //-->
+    </div>
+    <!-- fullcontents //-->
+</div>
+<!-- contents //-->
+<!-- footer -->
+<div id="footer">
+    <ul class="footermenu">
+        <li class="first"><a href="introduction_02.html">About IOU</a></li>
+        <li><a href="Members&Community_02.html">Business proposal</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Refuse unauthorized e-mail collecting</a></li>
+        <li><a href="Members&Community_06.html">1:1 Consulting</a></li>
+    </ul>
+    <ul class="copyright">
+        <li><em>[135-910]</em> 16th 503  Nonhyeon-ro   Gangnam-gu, Seoul, 135-910  Republic of Korea</li>
+        <li>© Copyright 2016 Incoming &amp; Outgoing Union</li>
+    </ul>
+    <div class="rightArea">
+        <div class="help">
+            <div class="inputbox">
+                <p class="txt"></p>
+                <select id="language">
+                    <option>Help Language select</option>
+                    <option>English</option>
+                    <option>Korea</option>
+                    <option>Chinese</option>
+                    <option>Japanese</option>
+                    <option>Germany</option>
+                    <option>French</option>
+                    <option>Spanish</option>
+                </select>
+            </div> 
+            <a href="#" class="searchbtn"><span>GO</span></a>
+        </div>
+        <div class="site">
+            <div class="inputbox">
+                <p class="txt"></p>
+                <select id="site" name="site" onchange="location.href=this.value">
+                    <option>Related Sites</option>
+                    <option value="http://worldwide.espacenet.com/?locale=en_EP">European Patent Office patent search site</option>
+                    <option value="http://eng.kipris.or.kr/enghome/main.jsp">Republic of Korea Intellectual Property Office patent search site</option>
+                    <option value="https://patentscope.wipo.int/search/en/structuredSearch.jsf;jsessionid=D0AA37437B23742BB6869AA659AEA7D9.wapp1nC">WIPO patent search site</option>
+                    <option value="https://www4.j-platpat.inpit.go.jp/eng/tokujitsu/tkbs_en/TKBS_EN_GM101_Top.action">JP Patent Office patent search site</option>
+                    <option value="http://portal.uspto.gov/pair/PublicPair">United States Patent and Trademark Office patent search site</option>
+                    <option value="http://pericles.ipaustralia.gov.au/ols/auspat/quickSearch.do">Australian Patent Office patent search site</option>
+                    <option value="http://www.iponz.govt.nz/app/Extra/Default.aspx?sid=636015190108676589">New Zealand Patent Office patent search site</option>
+                    <option value="http://www.pss-system.gov.cn/sipopublicsearch/ensearch/searchEnHomeIndexAC.do">CN Patent Office patent search site</option>
+                    <option value="https://www.ipo.gov.uk/types/patent/p-os/p-find/p-ipsum.htm">GB Patent Office patent search site</option>
+                    <option value="https://register.dpma.de/DPMAregister/pat/uebersicht?lang=en">DE Patent Office patent search site</option>
+                    <option value="http://121.58.254.45/ipophilsearch/patentsearch.aspx">Philippine Intellectual Property Office patent search site</option>
+                    <option value="http://www.ic.gc.ca/opic-cipo/cpd/eng/introduction.html">Canadian Intellectual Property Office patent search site</option>
+                    <option value="http://www.rupto.ru/rupto/portal/96bb3146-3081-11e1-351c-9c8e9921fb2c?lang=en">Russian Patent Office patent search site</option>
+                    <option value="http://onlineweb.dkpto.dk/pvsonline/Patent">Danish Patent Office patent search site</option>
+                    <option value="www.aippi.org">International Association for the Protection of Intellectual Property (AIPPI)</option>
+                    <option value="www.inta.org">International Trademark Association (INTA)</option>
+                    <option value="www.aipla.org">American Intellectual Property Law Association (AIPLA)</option>
+                    <option value="http://www.apaaonline.org/">Asian Patent Attorneys Association (APAA)</option>
+                </select>
+            </div>
+        </div> 
+    </div>
+</div>
+<!-- footer //-->    
+
+</body>
+</html>

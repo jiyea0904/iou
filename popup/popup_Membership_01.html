@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="keywords" content="IOU" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>IOU</title>
+<link rel="stylesheet" type="text/css" href="../css/popup.css" />
+<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+</head>
+<body id="popup">
+<!-- size width:626px; height:540px; -->
+<div class="popup">
+    <h4>Find ID</h4>
+    <div class="contentArea">
+        <!-- txtArea -->
+        <div class="txtArea">
+        	<p>* Please accurately fill out the information registered.</p>
+        </div>
+        <!-- txtArea -->
+        <!-- Member information input -->
+        <div>
+        	<p>Member information input</p>
+            <table class="input" cellpadding="0" cellspacing="0" summary="Member information input" >  
+            <caption>Member information input</caption>
+                <colgroup>
+                    <col width="215px" />
+                    <col width="*" />
+                </colgroup>
+                <tbody>   
+                    <tr>
+                        <th>Name</th>
+                        <td><label for="First_Name"></label><input type="text" class="txt_200" id="First_Name" value="First Name" /><label for="Last_Name"></label><input type="text" class="txt_200" id="Last_Name" value="Last Name" /></td>
+                    </tr>
+                    <tr>
+                        <th>Phone No.</th>
+                        <td><label for="Number"></label><input type="text" class="txt_400" id="Number" value="Please enter no &ldquo;-&rdquo;, ex) 01012344567" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Member information input //-->
+        <!-- Secret Questions -->
+        <div>
+        	<p>Secret Questions</p>
+            <table class="input" cellpadding="0" cellspacing="0" summary="Secret Questions" >  
+            <caption>Secret Questions</caption>
+                <colgroup>
+                    <col width="215px" />
+                    <col width="*" />
+                </colgroup>
+                <tbody>   
+                    <tr>
+                        <th>Question *</th>
+                        <td>
+                            <div class="inputbox sel_400">
+                                <p class="txt"></p>
+                                <select id="Question">
+                                    <option>Choose Secret questions</option>
+                                    <option>What is your favorite children’s books?</option>
+                                    <option>What is your dream job?</option>
+                                    <option>What was the model of your first car?</option>
+                                    <option>Who was your favorite singer or band in high school?</option>
+                                    <option>Who was your favorite film star or character in school?</option>
+                                </select>
+                            </div> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Answer *</th>
+                        <td><label for="answer"></label><input type="text" class="txt_400" id="answer" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Secret Questions //-->
+        <!-- btnArea -->
+        <div class="btnArea">
+            <a class="btn_blue" href="#"><span>Confirm</span></a>
+        </div>
+        <!-- btnArea //-->
+        <!-- result -->
+        <div class="result last">
+        	<p>Your ID is the <em>skybros@saltware.co.kr</em></p>
+        </div>
+        <!-- result //-->
+    </div>
+    <a href="#" class="btn_close"><img src="../images/btn_close.png" alt="close" /></a>
+</div>
+<!-- contents //-->
+</body>
+</html>
